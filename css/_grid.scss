@@ -1,0 +1,104 @@
+.container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        grid-column-gap: 20px;
+        grid-row-gap: 15px;
+        grid-template-areas:
+            "first first second third"
+            "fourth fiveth fiveth third";
+
+    article {
+        display: block;
+        border-radius: 10px;
+    }
+
+    .temple {
+        max-width: 90%;
+        color: $white;
+        font-size: 15px;
+        font-weight: 600;
+        .all {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0 10px;
+        }
+        .img-txt {
+            flex:1;
+        }
+        .txt-down {
+            font-size: 12px;
+            line-height: 16px;
+            color: $light-gray;
+        }
+        
+    }
+
+
+    .black {
+
+        color: $very-dark-grayish;
+    }
+    img {
+        border-radius: 50%; 
+        border: 10px;
+    }
+
+    .circle {
+        background-color: black;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .mid-txt {
+        max-width: 90%;
+        font-size: 21px;
+        font-weight: 600;
+        color: $white;
+        padding: 0 0 10px;
+        
+    }
+
+    .bottom-txt {
+        max-width: 90%;
+        line-height: 17px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $light-gray;
+        padding: 10px 0 20px;
+
+    }
+
+    .first {
+        grid-area: first;
+        background-color: $moderate-violet;
+    }
+
+
+    .second {
+        grid-area: second;
+        background-color: $very-dark-grayish;
+    }
+
+    .third {
+        grid-area: third;
+        background-color: $white;
+    }
+
+    .fourth {
+        grid-area: fourth;
+        background-color: $white;
+    }
+
+    .fiveth {
+        grid-area: fiveth;
+        background-color: $dark-blackish-blue;
+    }
+
+}
