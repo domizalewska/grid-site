@@ -6,6 +6,10 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: hsl(210deg, 46%, 95%);
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -14,9 +18,8 @@ body {
 .container {
   display: grid;
   justify-content: center;
-  align-items: center;
+  width: 80%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 300px);
   grid-column-gap: 20px;
   grid-row-gap: 15px;
   grid-template-areas: "first first second third" "fourth fiveth fiveth third";
@@ -61,6 +64,8 @@ body {
   border-radius: 50%;
 }
 .container .mid-txt {
+  display: flex;
+  flex: 1;
   max-width: 90%;
   font-size: 21px;
   font-weight: 600;

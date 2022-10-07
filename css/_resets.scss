@@ -8,6 +8,10 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: $grayish-blue;
     font-size: 13px;
     font-family: 'Barlow Semi Condensed', sans-serif;

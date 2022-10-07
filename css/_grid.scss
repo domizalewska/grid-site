@@ -1,9 +1,10 @@
 .container {
         display: grid;
         justify-content: center;
-        align-items: center;
+        width: 80%;
+        // align-items: center;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 300px);
+        // grid-template-rows: repeat(2, 300px);
         grid-column-gap: 20px;
         grid-row-gap: 15px;
         grid-template-areas:
@@ -12,6 +13,7 @@
 
     article {
         display: block;
+        // height: 100%;
         border-radius: 10px;
     }
 
@@ -39,7 +41,6 @@
         
     }
 
-
     .black {
 
         color: $very-dark-grayish;
@@ -57,6 +58,8 @@
     }
 
     .mid-txt {
+        display: flex;
+        flex:1;
         max-width: 90%;
         font-size: 21px;
         font-weight: 600;
